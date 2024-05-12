@@ -1,0 +1,68 @@
+CRYPTO CURRENCY TRACKER
+
+
+What is crypto currency and how does it work?
+Cryptocurrency is digital money that doesn't require a bank or financial institution to verify transactions and can be used for purchases or as an investment. Transactions are then verified and recorded on a blockchain, an unchangeable ledger that tracks and records assets and trades
+
+
+
+
+This is a project  I made using api's. It track all the major cryptocurrency available  on the market. This is real time realtime price viewer made using made using HTML, CSs,and javascript.
+
+ Span 
+Bich me bhi use kar skte hai 
+For exapmple kisse ko alag se colour etc dena hai line me the <span style  = "red"</span>
+
+
+
+
+
+
+JS
+
+
+1 ...  getPrice Function:
+
+
+This function is responsible for fetching the current Bitcoin price from the Coindesk API (https://api.coindesk.com/v1/bpi/currentprice.json).
+It uses the fetch API to make an HTTP request and handles the response using the then method.
+The response is converted to JSON, and the relevant data is extracted to update the HTML content.
+The content of coinhead, price, and updTime elements is modified to display the current Bitcoin price, its symbol, and the last update time.
+
+
+
+
+
+
+2 ........changeData Arrow Function:
+
+
+
+This function is an arrow function (const changeData = (id) => { ... }).
+It takes an id parameter representing the cryptocurrency name.
+The function fetches the current price of the specified cryptocurrency from the Coingecko API (https://api.coingecko.com/api/v3/simple/price).
+Similar to the getPrice function, it handles the response, extracts the relevant data, and updates the HTML content with the new cryptocurrency's name, price, and the last update time.
+
+
+
+
+3 ......Initial Execution and Event Listener:
+
+
+
+The getPrice function is called initially to display the current Bitcoin price when the page loads.
+An event listener is added to the button with the id "getprice." When this button is clicked, the getPrice function is called again, refreshing the displayed Bitcoin price.
+
+
+
+.............................................................................
+ek exchange ke api pic ke or 4-5 token ko scrap kiya ot pool karva ke regular basic pe price  update kiye
+
+and react ke component bnye jisme effect etc laga ke states ke trhough price set kiya jab vo change hoga to ui pe reflect hoga
+..............................................................................
+
+
+
+
+Overall, this JavaScript code fetches and displays cryptocurrency prices (initially for Bitcoin and then for other cryptocurrencies upon user interaction) using data from external APIs. The displayed information includes the cryptocurrency name, price, and the last update time.
+
